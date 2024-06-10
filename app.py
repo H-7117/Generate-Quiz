@@ -1,9 +1,6 @@
 import streamlit as st
 import json
 import os
-from dotenv import load_dotenv
-
-load_dotenv()
 
 from openai import OpenAI
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
