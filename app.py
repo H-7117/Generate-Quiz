@@ -1,8 +1,7 @@
 import streamlit as st
-import json
-import os
-
 from openai import OpenAI
+import json
+
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 @st.cache_data
 def fetch_questions(text_content, quiz_level):
